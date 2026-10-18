@@ -1,0 +1,18 @@
+Feature_1,Feature_2,Pearson_r,Spearman_rho,Threshold
+average_monthly_balance_prevQ,previous_month_balance,0.994,0.9117,> 0.8
+current_balance,current_month_balance,0.9834,0.8914,> 0.8
+average_monthly_balance_prevQ,current_month_balance,0.9763,0.8575,> 0.8
+previous_month_end_balance,current_month_balance,0.9747,0.8412,> 0.8
+previous_month_end_balance,average_monthly_balance_prevQ,0.9705,0.8298,> 0.8
+previous_month_end_balance,previous_month_balance,0.9696,0.8692,> 0.8
+current_month_balance,previous_month_balance,0.9633,0.7681,> 0.8
+current_balance,average_monthly_balance_prevQ,0.9583,0.755,> 0.8
+current_balance,previous_month_end_balance,0.9473,0.7348,> 0.8
+current_balance,previous_month_balance,0.9422,0.6746,> 0.8
+current_month_credit,current_month_debit,0.937,0.4743,> 0.8
+average_monthly_balance_prevQ,average_monthly_balance_prevQ2,0.7635,0.7215,> 0.7
+average_monthly_balance_prevQ2,previous_month_balance,0.7366,0.6549,> 0.7
+previous_month_credit,previous_month_debit,0.734,0.4699,> 0.7
+average_monthly_balance_prevQ2,current_month_balance,0.7258,0.563,> 0.7
+previous_month_end_balance,average_monthly_balance_prevQ2,0.723,0.5855,> 0.7
+current_balance,average_monthly_balance_prevQ2,0.7146,0.5288,> 0.7

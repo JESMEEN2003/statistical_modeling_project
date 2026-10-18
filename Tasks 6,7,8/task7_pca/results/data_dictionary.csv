@@ -1,0 +1,22 @@
+Column,Type,Role,Verified,Description
+customer_id,Integer,Identifier,True,Unique identifier for each customer record.
+vintage,Integer,Duration Predictor,True,Customer account tenure with the bank measured in days.
+age,Integer,Demographic Predictor,True,Customer age in years.
+gender,Categorical,Demographic Predictor,True,"Customer gender (Male, Female; missing values present)."
+dependents,Float,Demographic Predictor,True,Number of financially dependent individuals reported by the customer.
+occupation,Categorical,Demographic Predictor,True,"Customer employment category (salaried, self_employed, student, retired, company)."
+city,Categorical / Code,Branch/Location Predictor,False,Categorical code representing customer residential/branch city (unmapped internal bank code).
+customer_nw_category,Ordinal,Socio-economic Predictor,True,"Bank customer net worth category tier (1 = High Net Worth, 2 = Medium, 3 = Low)."
+branch_code,Categorical / Code,Branch Predictor,False,Bank branch identification code (unmapped internal bank code).
+current_balance,Float,Financial Predictor,True,Account balance at the current observation timestamp.
+previous_month_end_balance,Float,Financial Predictor,True,Account balance recorded at the end of the previous calendar month.
+average_monthly_balance_prevQ,Float,Financial Predictor,True,Average monthly balance maintained over the previous financial quarter.
+average_monthly_balance_prevQ2,Float,Financial Predictor,True,Average monthly balance maintained over the quarter preceding the previous quarter.
+current_month_credit,Float,Financial Predictor,True,Total monetary credit inflows deposited during the current calendar month.
+previous_month_credit,Float,Financial Predictor,True,Total monetary credit inflows deposited during the previous calendar month.
+current_month_debit,Float,Financial Predictor,True,Total monetary debit outflows withdrawn during the current calendar month.
+previous_month_debit,Float,Financial Predictor,True,Total monetary debit outflows withdrawn during the previous calendar month.
+current_month_balance,Float,Financial Predictor,True,Running average daily balance during the current calendar month.
+previous_month_balance,Float,Financial Predictor,True,Running average daily balance during the previous calendar month.
+churn,Binary (0/1),Target Variable,True,"Customer churn status: 1 if customer churned within observation window, 0 otherwise."
+last_transaction,Date / String,Temporal Metadata,True,"Timestamp date of the customer's most recent transaction (""NaT"" represents no recorded transaction)."
